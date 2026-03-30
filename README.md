@@ -25,6 +25,7 @@
 /type4me-vocab Claude Code不要写成cloud code
 /type4me-vocab queen 3.5 需要写成 Qwen3.5
 ```
+![Xnip2026-03-30_23-57-18](https://github.com/user-attachments/assets/9bfd8e40-979e-4cc4-a12a-323daa42bf0d)
 
 本技能操作两种机制：
 
@@ -34,6 +35,8 @@
 | **热词** | 提高词在 ASR 模型中的识别概率 | 仅限模型词表中已有的标准术语 |
 
 ## 安装
+
+### 下面都是废话，你应该直接把链接发给你的agent
 
 将 `SKILL.md` 复制到 Claude Code 技能目录：
 
