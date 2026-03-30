@@ -22,7 +22,7 @@
 
 ```
 /type4me-vocab Ghostty 被识别成 ghosty
-/type4me-vocab 纠正 Svelte
+/type4me-vocab Claude Code不要写成cloud code
 /type4me-vocab queen 3.5 需要写成 Qwen3.5
 ```
 
@@ -78,7 +78,7 @@ Tell your agent which word is being misrecognized and what it should be. The ski
 
 ```
 /type4me-vocab "Ghostty" is being recognized as "ghosty"
-/type4me-vocab fix "Svelte"
+/type4me-vocab don't recognize Claude Code as cloud code
 /type4me-vocab "queen 3.5" should be "Qwen3.5"
 ```
 
