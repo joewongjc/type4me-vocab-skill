@@ -51,6 +51,14 @@ curl -o ~/.claude/skills/type4me-vocab/SKILL.md \
   https://raw.githubusercontent.com/joewongjc/type4me-vocab-skill/main/SKILL.md
 ```
 
+Codex 也可以使用同一份 skill：
+
+```bash
+git clone https://github.com/joewongjc/type4me-vocab-skill.git
+mkdir -p ~/.codex/skills
+ln -sfn "$(pwd)/type4me-vocab-skill" ~/.codex/skills/type4me-vocab
+```
+
 ## 环境要求
 
 - [Type4Me](https://github.com/anthropics/type4me) 已安装在 `/Applications/Type4Me.app`
@@ -105,6 +113,14 @@ cp type4me-vocab-skill/SKILL.md ~/.claude/skills/type4me-vocab/
 # Or just download the file
 curl -o ~/.claude/skills/type4me-vocab/SKILL.md \
   https://raw.githubusercontent.com/joewongjc/type4me-vocab-skill/main/SKILL.md
+```
+
+Codex can use the same skill:
+
+```bash
+git clone https://github.com/joewongjc/type4me-vocab-skill.git
+mkdir -p ~/.codex/skills
+ln -sfn "$(pwd)/type4me-vocab-skill" ~/.codex/skills/type4me-vocab
 ```
 
 ## Requirements

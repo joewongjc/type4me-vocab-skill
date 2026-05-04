@@ -49,8 +49,8 @@ if not app_path.exists():
     sys.exit(1)
 
 # 检查数据目录
-if not (app_support / "builtin-snippets.json").exists():
-    print("ERROR: Type4Me 数据目录不完整，请先启动一次 Type4Me")
+if not app_support.exists():
+    print("ERROR: Type4Me 数据目录不存在，请先启动一次 Type4Me")
     sys.exit(1)
 
 # 检查 URL scheme 支持（type4me://reload-vocabulary）
@@ -67,6 +67,10 @@ except Exception:
 
 print(f"Type4Me: 已安装")
 print(f"数据目录: OK")
+if not (app_support / "builtin-snippets.json").exists():
+    print("内置映射词: 未发现 builtin-snippets.json，将按空内置词表处理")
+if not (app_support / "builtin-hotwords.json").exists():
+    print("内置热词: 未发现 builtin-hotwords.json，将按空内置词表处理")
 print(f"URL scheme (reload): {'支持' if has_url_scheme else '不支持 (旧版本，文件修改仍生效，热词需手动刷新)'}")
 PYEOF
 ```
