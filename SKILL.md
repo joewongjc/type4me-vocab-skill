@@ -48,9 +48,9 @@ if not app_path.exists():
     print("请先安装 Type4Me: https://github.com/anthropics/type4me")
     sys.exit(1)
 
-# 检查数据目录
-if not (app_support / "builtin-snippets.json").exists():
-    print("ERROR: Type4Me 数据目录不完整，请先启动一次 Type4Me")
+# 检查数据目录（v1.9.3+ 不再 seed builtin-*.json，只要数据目录存在即可）
+if not app_support.exists():
+    print("ERROR: Type4Me 数据目录不存在，请先启动一次 Type4Me")
     sys.exit(1)
 
 # 检查 URL scheme 支持（type4me://reload-vocabulary）
